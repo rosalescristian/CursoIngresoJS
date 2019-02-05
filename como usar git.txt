@@ -1,7 +1,12 @@
 **git config --global --edit (editar archivo de configuracion)
 
-primero:
+- - - - - - - - - - - - - - - - - - - - 
+Empiezo a laburar
+
+primero(solo cuando empezas a trabajar):
 	git clone *repo* = repo es el link del repositorio en github
+- - - - - - - - - - - - - - - - - - - - 
+Cada vez que edito
 
 segundo:
 	entramos a la carpeta del GIT = cd CursoingresJS (entramos a la carpeta)
@@ -10,7 +15,9 @@ segundo:
 
 tercero:
 	git commit -m "Comentario del commit"
+- - - - - - - - - - - - - - - - - - - - 
+Cuando terminas de trabajar los cambios
 
-
-
+cuarto:
+	git push 
 
