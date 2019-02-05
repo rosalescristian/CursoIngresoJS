@@ -15,6 +15,8 @@ segundo:
 
 tercero:
 	git commit -m "Comentario del commit"
+
+	git status te muestra los archivos modificados que no estas siguiendo
 - - - - - - - - - - - - - - - - - - - - 
 Cuando terminas de trabajar los cambios
 
