@@ -2,5 +2,5 @@
 function mostrar()
 {
 	alert("Esto funciona de maravilla");
+	//alert("Probando probando"); - dos alertas en la misma funcion
 }
-
