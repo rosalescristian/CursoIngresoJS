@@ -1,0 +1,16 @@
+**git config --global --edit (editar archivo de configuracion)
+
+primero:
+	git clone *repo* = repo es el link del repositorio en github
+
+segundo:
+	entramos a la carpeta del GIT = cd CursoingresJS (entramos a la carpeta)
+	despues apretamos:
+	git add .	(hacemos esto cada vez q modificamos)
+
+tercero:
+	git commit -m "Comentario del commit"
+
+
+
+
