@@ -7,39 +7,75 @@ ej.: "la Resta es 750"*/
 function sumar()
 {	
 
-	var numero1 = parseInt(numeroUno.value);
-	var numero2 = parseInt(numeroDos.value);
-	var resultado = numero1 + numero2;
+	var numero1;
+	var numero2;
+	var resultado;
+
+	numero1 = numeroUno.value;
+	numero2 = numeroDos.value;
+
+	numero1 = parseInt(numero1);
+	numero2 = parseInt(numero2);
+	
+	resultado = numero1 + numero2;
+
 	alert("La suma es "+resultado);
 }
 
 function restar()
 {	
 
-	var numero1 = parseInt(numeroUno.value);
-	var numero2 = parseInt(numeroDos.value);
-	var resultado = numero1 - numero2;
-	alert("La resta es "+resultado);
+	var numero1;
+	var numero2;
+	var resultado;
+
+	numero1 = numeroUno.value;
+	numero2 = numeroDos.value;
+
+	numero1 = parseInt(numero1);
+	numero2 = parseInt(numero2);
+	
+	resultado = numero1 - numero2;
+
+	alert("La diferencia es "+resultado);
 	
 }
 
 function multiplicar()
 { 	
 
-	var numero1 = parseInt(numeroUno.value);
-	var numero2 = parseInt(numeroDos.value);
-	var resultado = numero1 * numero2;
+	var numero1;
+	var numero2;
+	var resultado;
+
+	numero1 = numeroUno.value;
+	numero2 = numeroDos.value;
+
+	numero1 = parseInt(numero1);
+	numero2 = parseInt(numero2);
+	
+	resultado = numero1 * numero2;
+
 	alert("El producto es "+resultado);
 	
 }
 
 function dividir()
 {	
-
-	var numero1 = parseInt(numeroUno.value);
-	var numero2 = parseInt(numeroDos.value);
-	var resultado = numero1 / numero2;
-	alert("El cociente es "+resultado);
 	
+	var numero1;
+	var numero2;
+	var resultado;
+
+	numero1 = numeroUno.value;
+	numero2 = numeroDos.value;
+
+	numero1 = parseInt(numero1);
+	numero2 = parseInt(numero2);
+	
+	resultado = numero1 / numero2;
+
+	alert("El cociente es "+resultado);	
+
 }
 

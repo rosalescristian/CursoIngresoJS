@@ -37,5 +37,5 @@ function mostrar()
 	nombre=prompt("Por favor ingrese sus datos");
 	//document.getElementById(elNombre.value=nombre); //Mi version - inserto un nuevo valor en el id elNombre
 	document.getElementById('elNombre').value=nombre;
-	
+
 }

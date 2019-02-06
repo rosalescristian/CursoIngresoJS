@@ -4,11 +4,22 @@ mostrar el resulto por medio de "ALERT"*/
 function sumar()
 {
 
-	var numero1 = parseInt(numeroUno.value);
-	var numero2 = parseInt(numeroDos.value);
-	var resultado = numero1 + numero2;
+	//var primerNumero = parseInt(numeroUno.value);
+	//var segundoNumero = parseInt(numeroDos.value);
+	
+	var primerNumero;
+	var segundoNumero;
+	var suma;
 
-	alert("La suma es "+resultado);
+	primerNumero = numeroUno.value;
+	segundoNumero = numeroDos.value;
+
+	primerNumero=parseInt(primerNumero);
+	segundoNumero=parseInt(segundoNumero);
+
+	suma = primerNumero + segundoNumero;
+
+	alert("La suma es "+suma);
 
 
 }
