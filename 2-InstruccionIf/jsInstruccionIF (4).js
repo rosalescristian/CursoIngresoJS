@@ -4,9 +4,21 @@ function mostrar()
 
 	var age;
 	age = edad.value;
+	age = parseInt(age);
 
-		if (age >=13 && age <= 17) { // Comparacion es con 2 = [==] / 1 solo = es para asignar!!!
+		if (age > 12 && age < 18)
+		{
 				alert("Ud. es un adolescente.");
 		}
 
+/*
+		if (age>12)
+		{
+			if (age<18)
+			{
+				alert("Ud. es un adolescente.");
+			}
+					
+		}
+*/
 }//FIN DE LA FUNCIÓN

@@ -10,6 +10,7 @@ function mostrar()//(if (parseInt(edad.value)=15;alert("niña bonita")) {})
 	var age;
 
 	age = edad.value;
+	age = parseInt(age);
 
 		if (age == 15) { // Comparacion es con 2 = [==] / 1 solo = es para asignar!!!
 				alert("Niña bonita");
