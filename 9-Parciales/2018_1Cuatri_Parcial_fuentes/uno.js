@@ -1,21 +1,23 @@
-
+//alert ("usredes son xxxx y xxxx, sus edades son xx y xx, y la suma de sus edades es xx")
 function mostrar()
 {
-	var ancho;
-	var largo;
-	var perimetro;
+	var nombreUno;
+	var nombreDos;
+	var edadUno;
+	var edadDos;
+	var sumaEdad;
 
-	ancho = parseInt(ancho);
-	largo = parseInt(largo);
-	perimetro = parseInt(perimetro);
+	nombreUno = prompt("Ingrese un nombre.");
+	edadUno = prompt("Ingrese su edad.");
+	edadUno = parseInt(edadUno);
 
-	ancho = prompt("Ingrese el ancho del rectángulo.");
-	largo = prompt("Ingrese el largo del rectángulo.");
+	nombreDos = prompt("Ingrese otro nombre.");
+	edadDos = prompt("Ingrese la edad.");
+	edadDos = parseInt(edadDos);
+	
+	sumaEdad = edadUno+edadDos;
+	sumaEdad = parseInt(sumaEdad);
 
-	perimetro = (2*ancho+2*largo);
-
-	alert("El perímetro del rectángulo es: "+perimetro);
-	//alert(ancho);
-	//alert(largo);
+	alert("Uds. son "+nombreUno+" y "+nombreDos+", sus edades son "+edadUno+" y "+edadDos+", y la suma de sus edades es "+sumaEdad);
 
 }
