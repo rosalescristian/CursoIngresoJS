@@ -16,8 +16,9 @@ function mostrar()
 	recargoTC = parseInt(recargoTC);
 
 	precioFinal = precioEfectivo+recargoTC;
+	precioFinal = parseInt(precioFinal);
 
-	alert("El precio del producto en efectivo es $"+precioEfectivo" con tarjeta tiene un recargo de 10% que sería $"+recargoTC+" de recargo, costandole final $"+precioFinal);
+	alert("El precio del producto en efectivo es $"+precioEfectivo+", con tarjeta tiene un recargo de 10% que sería $"+recargoTC+" de recargo, costandole final $"+precioFinal+".");
 
 	
 }
