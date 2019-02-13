@@ -7,7 +7,7 @@ function mostrar()
 
 alert("El resultado del examen es: "+numeroRandom);
 
-	if(numeroRandom < 5)
+	if(numeroRandom < 4)
 	{
 		alert("Vamos, la proxima se puede");
 	}
