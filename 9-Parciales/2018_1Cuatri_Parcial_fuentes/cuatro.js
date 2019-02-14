@@ -27,23 +27,31 @@ function mostrar()
 				if (formaPago == 1)
 				{
 					importeFinal=importe*0.75;
-				
+
 				}
+				else
+				{
 					importeFinal=importe*0.85;
+				}
 			}
 			if (formaPago == 1)
 			{
 				importeFinal=importe*0.9;
 			}
+			else
+			{
 				importeFinal=importe
+			}
 	}	
-		if (formaPago == 1)
+		else
 		{
-			importeFinal=importe*0.9;
-		}
-			importeFinal=importe
-
-	alert("El valor de la compra es: "+importeFinal);
+			if (formaPago == 1)
+			{
+				importeFinal=importe*0.9;
+			}
+				importeFinal=importe
+		}		
+		alert("El valor de la compra es: "+importeFinal);
 }
 /* al realizar una compra, si la compra de mas de dos productos 
 se realizo un descuento del 10% y si suera los $2000 se agrega
