@@ -17,7 +17,7 @@ function comenzar()
 	numeroSecreto = Math.floor((Math.random() * 100) + 1);
 	numeroSecreto = parseInt(numeroSecreto);
 	//var numeroSecreto;
-	console.log(numeroSecreto);
+	//console.log(numeroSecreto);
 
 }
 
