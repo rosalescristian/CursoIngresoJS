@@ -60,13 +60,13 @@ function mostrar()
 	}
 	else
 	{
-		if (numeroDos>numeroUno && numeroDos>numeroTres && numeroDos>numeroCuatro)
+		if (numeroDos>numeroTres && numeroDos>numeroCuatro)
 		{
 			numeroMayor = numeroDos
 		}
 		else
 		{
-			if (numeroTres>numeroUno && numeroTres>numeroDos && numeroTres>numeroCuatro)
+			if (numeroTres>numeroCuatro)
 			{
 				numeroMayor = numeroTres;
 			}
@@ -78,7 +78,6 @@ function mostrar()
 	}
 
 	alert("El importe mayor es $"+numeroMayor+". La compra es de $ "+precioFinal);
-
 
 }
 
