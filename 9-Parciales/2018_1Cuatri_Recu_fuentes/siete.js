@@ -6,8 +6,11 @@ function mostrar()
 	var contador = 0;
 	var acumulador=0;
 	var promedio;
-	var min=0;
+	var min=10;
 	var max=0;
+	var sexomax;
+	var sexomin;
+	var contadorHombresAprobados=0;
 
 	isNaN();
 	
@@ -35,18 +38,34 @@ function mostrar()
 		contador = contador+1;				
 
 		if(contador==1)
+		{
+			max=nota;
+			sexomax=sexo;
+		}
+		else
+		{
+			if(nota>max)
 			{
 				max=nota;
 				sexomax=sexo;
 			}
-			else{
-				if(nota>max)
-				{
-					max=nota;
-					sexomax=sexo;
-				}
+		}
+		if (contador > 0)
+		{
+			mix=nota;
+			sexomin=sexo;
+		}
+			if(nota<min)
+			{
+					min=nota;
+					sexomin=sexo;
+			}
+		
 
-
+		if(nota > 5 && sexo = "m")
+		{
+			contadorHombresAprobados = contadorHombresAprobados + 1;
+		}
 
 /*
 			}
@@ -69,7 +88,7 @@ function mostrar()
 	alert("El promedio de las notas es "+promedio);
 	alert("La nota mas alta es "+max);
 	alert("La nota mas baja es "+min);
-	
+	alert(+contadorHombresAprobados+" hombres aprobaron con 6 o mas.");	
 
 	//console.log(nota);
 	//console.log(sexo);
