@@ -44,7 +44,7 @@ function mostrar()
 	var porcentajeNueve;
 	var porcentajeDiez;
 
-	for(contador=0;contador<10000;contador++)
+	for(contador=0;contador<10;contador++)
 	{
 		numeroRandom = Math.floor((Math.random() * 10) + 1);
 		numeroRandom = parseFloat(numeroRandom);
@@ -86,7 +86,9 @@ function mostrar()
 		}
 	}
 
-	porcentajeUno=(contadorUno/contador)*100;
+	alert("no entraste al for");
+
+	/*porcentajeUno=(contadorUno/contador)*100;
 	porcentajeDos=(contadorDos/contador)*100;
 	porcentajeTres=(contadorTres/contador)*100;
 	porcentajeCuatro=(contadorCuatro/contador)*100;
@@ -97,7 +99,6 @@ function mostrar()
 	porcentajeNueve=(contadorNueve/contador)*100;
 	porcentajeDiez=(contadorDiez/contador)*100;
 	
-
 	//document.write("El 1 salio "+contadorUno+" veces; el "+(contadorUno/contador)*100+" % de las oportunidades. <br>");
 	document.write("El 1 salio "+contadorUno+" veces; el "+porcentajeUno+" % de las oportunidades. <br>");
 	document.write("El 2 salio "+contadorDos+" veces; el "+porcentajeDos+" % de las oportunidades. <br>");
@@ -109,6 +110,6 @@ function mostrar()
 	document.write("El 8 salio "+contadorOcho+" veces; el "+porcentajeOcho+" % de las oportunidades. <br>");
 	document.write("El 9 salio "+contadorNueve+" veces; el "+porcentajeNueve+" % de las oportunidades. <br>");
 	document.write("El 10 salio "+contadorDiez+" veces; el "+porcentajeDiez+" % de las oportunidades. <br>");
-	
+*/	
 }
 
