@@ -1,96 +1,32 @@
+// incompleto
+
 function mostrar()
 {
-
 	var nota;
 	var sexo;
-	var contador = 0;
-	var acumulador=0;
-	var promedio;
-	var min=10;
-	var max=0;
-	var sexomax;
-	var sexomin;
-	var contadorHombresAprobados=0;
-
-	isNaN();
+	//var curso = 5;
+	var alumnos = 0;
 	
-	while(contador<5)
+
+	while(alumnos < 6)
 	{
-		nota = prompt("Ingrese su nota (entre 0 y 10)");
-		nota = parseInt(nota);
+		nota=prompt("Ingrese la nota entre 0 y 10.");
 
-			while(isNaN(nota) || nota <0 || nota > 10)
+			while(isNaN(nota) || nota < 0 || nota > 10)
 			{
-				nota=prompt("Nota Erronea, ingrese un nro entre 0 y 10");
-				nota = parseInt(nota);
-				acumulador = nota + acumulador;
-				acumulador = parseInt(acumulador);
+				nota=prompt("Ha ingresado una nota invalida, por favor reingrese la misma.");
 			}
-		acumulador = nota + acumulador;	
-		acumulador = parseInt(acumulador);
 
-		sexo = prompt("Ingrese su sexo; F o M");
-	
-			while(isNaN(sexo)==false || sexo != "f" && sexo !="m")
-			{
-				sexo = prompt("Sexo erroneo, ingrese su sexo; F o M");
-			}
-		contador = contador+1;				
+		sexo=prompt("Ingrese el sexo (f o m).");
 
-		if(contador==1)
-		{
-			max=nota;
-			sexomax=sexo;
-		}
-		else
-		{
-			if(nota>max)
+			while(sexo != "f")// && sexo != "m")
 			{
-				max=nota;
-				sexomax=sexo;
-			}
-		}
-		if (contador > 0)
-		{
-			mix=nota;
-			sexomin=sexo;
-		}
-			if(nota<min)
-			{
-					min=nota;
-					sexomin=sexo;
+				sexo=prompt("El sexo ingresado es invalido, por favor reingrese solo f o m.";
 			}
 		
-
-		if(nota > 5 && sexo = "m")
-		{
-			contadorHombresAprobados = contadorHombresAprobados + 1;
-		}
-
-/*
-			}
-			if(max<nota || max == 0)
-			{
-				max = nota;
-				max	= parseInt(max);
-			}	
-			if(min>nota || min == 0)
-			{
-				min = nota;
-				min = parseInt(min);
-	}
-*/
+		alumnos++;
 	}
 
-	promedio = acumulador / 5;
-	promedio = parseInt(promedio);
-	
-	alert("El promedio de las notas es "+promedio);
-	alert("La nota mas alta es "+max);
-	alert("La nota mas baja es "+min);
-	alert(+contadorHombresAprobados+" hombres aprobaron con 6 o mas.");	
-
-	//console.log(nota);
-	//console.log(sexo);
+alert(nota);
 
 }

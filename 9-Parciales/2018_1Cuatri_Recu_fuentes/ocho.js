@@ -1,80 +1,85 @@
 function mostrar()
 {
-	var contador=0;
-	var contadorPositivo=0;
-	var contadorNegativo=0;
+
+	var letra;
+	var numero;
+	var respuesta = "si";
+	var limiteInferior = -100;
+	var limiteSuperior = 100;
+	var contadorNrosPares=0;
+	var contadorNrosImpares=0;
 	var contadorCeros=0;
-	var acumuladorPositivo=0;
-	var acumuladorNegativo=0;
-	var cantidadNumeroPar=0;
-	var cantidadNumeroImpar=0;
-	var positivo=0;
-	var negativo=1;
-	var respuesta='si';
-	var numeroUno;
+	var contadorPositivos=0;
+	var contadorNegativos=0;
+	var sumaPositivos;
+	var sumaNegativos;
+	var contador=0;
+	var numeroMaximo;
+	var letraNumeroMaximo;
 
-while(respuesta == "si")
+	while(respuesta == "si")
 	{
-		numeroUno=prompt("Ingrese un nro real.");
-		numeroUno = parseInt(numeroUno);
-		//contador = contador + 1;
-		letraUno=prompt("Ingrese una letra.");
 
-		if(numeroUno>0)
-		{
-			positivo = numeroUno;
-			contadorPositivo = contadorPositivo +1;
-			acumuladorPositivo = acumuladorPositivo + numeroUno;
-		}else
-		{
-			if(numeroUno < 0)
+		letra=prompt("Ingrese una letra");
+			while(!isNaN(letra))
 			{
-				negativo = numeroUno;
-				contadorNegativo = contadorNegativo +1;
-				acumuladorNegativo = acumuladorNegativo + numeroUno;
+				letra=prompt("No ha ingresado una letra, reingrese.");
+			}
+
+		numero=prompt("Ingrese un nro entre -100 y 100.");
+			while(isNaN(numero) || numero < limiteInferior || numero > limiteSuperior)		
+			{
+				numero=prompt("Ha ingresado un nro erroneo, reingrese un nro entre -100 y 100.");
+			}
+
+		if(numero%2==0)
+		{
+			contadorNrosPares++;
+		}
+		else
+		{
+			if(numero == 0)
+			{
+				contadorCeros++;
 			}
 			else
 			{
-				ceros = numeroUno;
-				contadorCeros = contadorCeros + 1;
+			contadorNrosImpares++;
 			}
 		}
 
-		if(numeroUno%2==0)
+		if(numero>0)
 		{
-			cantidadNumeroPar = cantidadNumeroPar + 1;
-
+			sumaPositivos = sumaPositivos + numero
+			contadorPositivos++;
 		}
 		else
 		{
-			cantidadNumeroImpar = cantidadNumeroImpar + 1;
+			sumaNegativos = sumaNegativos + numero
+			contadorNegativos++;
 		}
-		
+
+
 		if(contador==1)
 		{
-			max=nota;
-			sexomax=sexo;
-		}
+			numeroMaximo = numero;
+			letra=letraNumeroMaximo;
+		} 
 		else
 		{
-			if(nota>max)
-			{
-				max=nota;
-				sexomax=sexo;
-			}
+			if(numero>numeroMaximo)
+				numeroMaximo=numero;
+				letra=letraNumeroMaximo;
 		}
-		if (contador > 0)
-		{
-			mix=nota;
-			sexomin=sexo;
-		}
-			if(nota<min)
-			{
-					min=nota;
-					sexomin=sexo;
-			}
 
-		respuesta = prompt("¿Desea seguir?")
+
+		respuesta=prompt("¿Desea continuar?(si o no)");
+		contador++;
 	}
 
+alert(letra+" "+numero+" "+contadorNrosPares+" "+contadorNrosImpares+" "+contadorCeros);
+
+
+
+	
 }
