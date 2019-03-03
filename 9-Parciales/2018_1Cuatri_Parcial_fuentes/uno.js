@@ -1,7 +1,7 @@
 //alert ("usredes son xxxx y xxxx, sus edades son xx y xx, y la suma de sus edades es xx")
 function mostrar()
 {
-	var nombreUno;
+/*	var nombreUno;
 	var nombreDos;
 	var edadUno;
 	var edadDos;
@@ -19,5 +19,18 @@ function mostrar()
 	sumaEdad = parseInt(sumaEdad);
 
 	alert("Uds. son "+nombreUno+" y "+nombreDos+", sus edades son "+edadUno+" y "+edadDos+", y la suma de sus edades es "+sumaEdad);
+*/
+
+	var alto;
+	var ancho;
+	var perimetro;
+
+	ancho = prompt("Ingrese el ancho del rectangulo.");
+	alto = prompt("Ingrese el alto del rectangulo.");
+	perimetro = ancho*2+alto*2;
+
+	alert("El perimetro del rectangulo es "+perimetro);
+
+
 
 }

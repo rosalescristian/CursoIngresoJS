@@ -14,7 +14,7 @@ Si la suma no llega a 50 tiene incremento del 15% //
 function mostrar()
 {
 
-	var numeroUno;
+/*	var numeroUno;
 	var numeroDos;
 	var numeroTres;
 	var numeroCuatro;
@@ -164,7 +164,49 @@ function mostrar()
 				importeFinal=importe
 		}		
 		alert("El valor de la compra es: "+importeFinal);
+*/
+
+
+	 var numeroUno;
+	 var numeroDos;
+	 //var resta;
+	 //var suma;
+	 var resultado
+
+	 numeroUno = prompt("Ingrese un nro.");
+	 numeroUno = parseInt(numeroUno);
+	 numeroDos = prompt("Ingrese otro nro.");
+	 numeroDos = parseInt(numeroDos);
+
+	 if(numeroUno==numeroDos)
+	 {
+	 	resultado=numeroUno+""+numeroDos;
+	 	alert(resultado);
+	 }
+	 else
+	 {
+	 	if(numeroUno>numeroDos)
+	 	{
+	 		resultado=numeroUno-numeroDos;
+	  		alert(resultado);
+		}
+	  	else
+	  	{
+	  		resultado=numeroUno+numeroDos;
+		  		
+		  		if(resultado>10)
+				{	
+					alert("La suma es "+resultado+" y supero el 10.")
+				}
+				else
+				{
+					alert(resultado);
+				}
+		}
+	}
 }
+
+
 /* al realizar una compra, si la compra de mas de dos productos 
 se realizo un descuento del 10% y si suera los $2000 se agrega
  un descuento adicional del 15%, si el pago es con tarjeta y no 

@@ -5,7 +5,7 @@
 function mostrar()
 {
 
-	var precioEfectivo;
+/*	var precioEfectivo;
 	var recargoTC;
 	var precioFinal;
 
@@ -19,6 +19,16 @@ function mostrar()
 	precioFinal = parseInt(precioFinal);
 
 	alert("El precio del producto en efectivo es $"+precioEfectivo+", con tarjeta tiene un recargo de 10% que sería $"+recargoTC+" de recargo, costandole final $"+precioFinal+".");
+*/
 
-	
+	var nombre;
+	var localidad;
+
+	nombre=elNombre.value;
+	localidad=laLocalidad.value;
+
+	alert("Ud es "+nombre+" y vive en la localidad de "+localidad);
+
+
+
 }
