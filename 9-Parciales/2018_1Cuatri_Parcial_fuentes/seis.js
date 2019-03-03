@@ -30,7 +30,7 @@ function mostrar()
 		case "22":
 		case "23":
 		case "24":
-			mensaje = "A dormir."
+			mensaje = "Es de noche, a dormir."
 			break;
 		default:
 			if(hora < 0 || hora > 24)

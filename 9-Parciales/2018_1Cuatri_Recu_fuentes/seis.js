@@ -30,7 +30,7 @@ function mostrar()
 		default:
 			if(hora>19 && hora <= 24 )
 			{
-				mensaje = "A dormir";
+				mensaje = "Es de noche, a dormir";
 			}
 			else if(hora > 0 && hora < 6)
 			{
