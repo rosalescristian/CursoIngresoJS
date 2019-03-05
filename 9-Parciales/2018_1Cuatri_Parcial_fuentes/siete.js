@@ -56,9 +56,6 @@ function mostrar()
 
 promedio = (acumuladorNotas / contadorAlumnos).toFixed(2);
 
-alert("El promedio de las notas es "+promedio);
-alert("La nota mas baja es "+notaMin+" y el sexo de la nota mas baja es "+sexoNotaMin);
-alert("La cantidad de Varones que se sacaron mas de 6 fueron "+contadorVaronesAprobados);
+alert("El promedio de las notas es "+promedio+"\n"+"La nota mas baja es "+notaMin+" y el sexo de la nota mas baja es "+sexoNotaMin+"\n"+"La cantidad de Varones que se sacaron mas de 6 fueron "+contadorVaronesAprobados);
 
 }
-2
