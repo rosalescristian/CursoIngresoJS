@@ -8,8 +8,8 @@ function mostrar()
 	var contadorMarca;
 	var pesoMaximo = 100;
 	var pesoMinimo = 1;
-	var temperaturaMinimo = -30;
-	var temperaturaMaxima = 30;
+	//var temperaturaMinimo = -30;
+	//var temperaturaMaxima = 30;
 	var contadorTemperaturasPares = 0;
 	var contadorTemperaturasImpares = 0;
 	var contadorAlmacenamientoMenosCero = 0;
@@ -23,13 +23,14 @@ function mostrar()
 	{
 		marca = prompt("Ingrese la marca del producto.");
 
-		peso = prompt("Ingrese el peso del producto.(Entre 0 y 100)");
-			while(isNaN(peso) || peso < pesoMinimo || peso > pesoMaximo)
+		peso = prompt("Ingrese el peso del producto entre 0 y 100.");
+		while(isNaN(peso)|| peso < -30 || peso > 100)
+		//peso=parseInt(peso);
 			{
-				peso=prompt("Ha ingresado un peso invalido. Reingrese un peso entre 0 y 100");
+				peso = prompt("Ingreso un peso erroneo, reingrese entre 0 y 100.");
 			}
-		peso=parseInt(peso);
 		acumuladorPeso = acumuladorPeso + peso;
+		//acumuladorNumeros = parseInt(acumuladorNumeros);
 
 		temperaturaAlmacenamiento = prompt("Ingrese la temperatura de almacenamiento.");
 			while(isNaN(temperaturaAlmacenamiento) || temperaturaAlmacenamiento < temperaturaMinimo || temperaturaAlmacenamiento > temperaturaMaxima)
@@ -51,8 +52,8 @@ function mostrar()
 		{
 			pesoMaximo = peso;
 			marcaPesoMax = marca;
-			pesoMinimo = peso;
-			marcaPesoMin = marca;
+			//pesoMinimo = peso;
+			//marcaPesoMin = marca;
 		}
 		else
 		{
@@ -79,7 +80,7 @@ function mostrar()
 
 	promediopesos = acumuladorPeso/contadorMarca;
 
-	//alert(contadorTemperaturasPares+" "+marcaPesoMax+" "+contadorAlmacenamientoMenosCero+" "+promediopesos+" "+pesoMaximo+" "+pesoMinimo);
-	alert("Nada");
+alert(contadorTemperaturasPares+" "+marcaPesoMax+" "+contadorAlmacenamientoMenosCero+" "+promediopesos+" "+pesoMaximo+" "+pesoMinimo);
+//	alert("Nada");
 
 }
